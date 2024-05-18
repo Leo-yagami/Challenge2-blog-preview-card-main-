@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500@800&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  /* centering the div */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0;
+  padding: 0; */
+  /* making sure padding and margins are WITHING the actual heigh and not causing any excess height compared to the viewport */
+  /* box-sizing: border-box; */
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  /* gap: 18px; */
+
+  background-color: hsl(0, 0%, 100%);
+  width: 22%;
+  padding: 18px 18px;
+  border-radius: 14px;
+  /* Part two animation and border and shadow */
+  /* Border and shadow */
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 7px 7px 0 hsl(0, 0%, 7%);
+  transition: 280ms ease-in;
+  /* Animation */
+}
+
+.container:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 12px 12px 0 hsl(0, 0%, 7%);
+}
+
+.container__illustration {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.container__small {
+  /* width: 90%; */
+  /* display: inline-block; */
+}
+
+.container__tag {
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 3px;
+  padding: 6px 10px;
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  margin-bottom: 12px;
+}
+
+.container__date {
+  font-size: 12px;
+  color: hsl(0, 0%, 7%);
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.container__heading {
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.container__content {
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 10px;
+  /* justify-content: center; */
+}
+.author_img {
+  height: 30px;
+  width: 29px;
+}
+
+.author_name {
+  display: inline;
+  padding-bottom: 3px;
+  font-size: 13px;
+  font-weight: 800;
+}
